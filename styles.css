@@ -166,10 +166,6 @@ article .imageWrapper {
     transition-behavior: ease-out;
 }
 
-.mainLower article:hover {
-    transform: translateY(-5px);
-}
-
 .mainLower a {
     margin-left: auto;
     margin-right: auto;
