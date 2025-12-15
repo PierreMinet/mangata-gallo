@@ -3,8 +3,17 @@
     padding: 0;
 }
 
+:root {
+  --main-black: #0a0a0a;
+  --main-white: #e0e0e0;
+  --main-gray: #e4e4e4;
+  --secondary-white: #f5f5f5;
+  --secondary-black: #111111;
+  --secondary-gray: #161616;
+}
+
 body {
-    background-color: #0a0a0a;
+    background-color: var(--main-black);
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
@@ -20,7 +29,7 @@ h1 {
     font-family: "Taviraj", serif;
     font-weight: 400;
     font-style: normal;
-    color: #e0e0e0;
+    color: var(--main-white);
 }
 
 h2 {
@@ -46,7 +55,7 @@ p {
 }
 
 header, nav, main {
-    background-color: #f5f5f5;
+    background-color: var(--secondary-white);
 }
 
 header {
@@ -82,7 +91,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #e0e0e0;
+    background-color: var(--main-white);
 }
 
 section {
@@ -105,23 +114,23 @@ article a {
     display: block;
     width: fit-content;
     text-decoration: none;
-    color: #f5f5f5;
+    color: var(--secondary-white);
     padding: 1rem 2rem;
     margin-top: 2rem;
-    background-color: #0a0a0a;
-    border: 2px solid #0a0a0a;
+    background-color: var(--main-black);
+    border: 2px solid var(--main-black);
     transition-duration: 0.3s;
 }
 
 article a:hover {
-    background-color: #f0f0f0;
-    color: #0a0a0a;
+    background-color: var(--main-gray);
+    color: var(--main-black);
 }
 
 article .imageWrapper {
     width: 100%;
     height: fit-content;
-    background-color: #0a0a0a;
+    background-color: var(--main-black);
     overflow: hidden;
 }
 
@@ -141,7 +150,7 @@ article .imageWrapper {
 }
 
 .mainUpper p {
-    color: #e0e0e0;
+    color: var(--main-white);
     max-width: 30%;
 }
 
@@ -152,7 +161,7 @@ article .imageWrapper {
 }
 
 .mainLower article {
-    background-color: #e4e4e4;
+    background-color: var(--main-gray);
     transition-duration: 1s;
     transition-behavior: ease-out;
 }
@@ -168,8 +177,8 @@ article .imageWrapper {
 
 footer {
     display: flex;
-    background: linear-gradient(to top right, #111111, 70%, #161616);
-    color: #f5f5f5;
+    background: linear-gradient(to top right, var(--secondary-black), 70%, var(--secondary-gray));
+    color: var(--secondary-white);
     padding: 2rem;
     align-items: center;
 }
@@ -225,7 +234,7 @@ footer img {
 
     .mainLower {
         flex-direction: column;
-    } 
+    }
 
     header {
         padding: 2rem;
