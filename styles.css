@@ -5,7 +5,7 @@
 
 :root {
   --main-black: #0a0a0a;
-  --main-white: #e0e0e0;
+  --main-white: #fcfcfc;
   --main-gray: #e4e4e4;
   --secondary-white: #f5f5f5;
   --secondary-black: #111111;
@@ -81,7 +81,11 @@ nav ul {
 
 nav li {
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
 }
 
 nav li a {
@@ -91,7 +95,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: var(--main-white);
+    background-color: var(--main-gray);
 }
 
 section {
@@ -158,6 +162,7 @@ article .imageWrapper {
     padding: 1rem;
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: var(--main-white);
 }
 
 .mainLower article {
